@@ -1,11 +1,13 @@
 import { browser, by, element } from 'protractor';
 
 export class AppPage {
-  navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl) as Promise<unknown>;
+  // tslint:disable-next-line:typedef
+  navigateTo() {
+    return browser.get('/');
   }
 
-  getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  // tslint:disable-next-line:typedef
+  getParagraphText() {
+    return element(by.css('app-root h1')).getText();
   }
 }
