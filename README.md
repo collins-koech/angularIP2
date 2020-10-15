@@ -4,7 +4,7 @@ Moringa Core independent project. The Program lets users search for github users
 
 ## Author(s).
 
-Andrew Waweru
+Collins Koech
 
 ## Application specs
 
@@ -19,14 +19,10 @@ Andrew Waweru
 
 
 
-## Link to Deployed Site
-https://andyweru.github.io/MC_11_Github_Search/
-
-
 ## Project setup instructions
 ##### To see the code written use the following commands:
 
-- `git clone https://github.com/andyweru/MC_11_Github_Search.git`
+- `git clone https://github.com/collins-koech/angularip2`
 - `cd GithubSearch`
 - `atom .`
 - `code .` (if using visual studio code is your preffered text editor)
@@ -66,7 +62,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ----
 MIT License
 
-Copyright (c) 2018 Moringa School
+Copyright (c) 2020 Moringa School
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
