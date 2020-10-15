@@ -5,8 +5,7 @@
 
 .allRepos{
     background-color: black;
-    opacity: 0.8;
-    
+    opacity: 0.8; 
 }
 
 .img-thumbnail{
@@ -33,12 +32,12 @@ a{
 }
 
 .panel-heading{
-    background:#021b2a;
+    background:#083d5b;
     color: #fff;
 }
 
 .list-group{
-    background:#021b2a;
+    background:#083d5b;
     color: #fff;
     padding: 30px;
     font-size: 18px;

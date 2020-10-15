@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { GithubfetcherService } from "./services/githubfetcher.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'github-search-app';
+
+export class AppComponent implements OnInit {
+
+  ngOnInit() {
+  }
+
 }

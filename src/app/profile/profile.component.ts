@@ -1,25 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { GitSearchService } from '../git-search.service';
-import { Profile } from '../profile-class/profile';
-
+import { GithubfetcherService } from "../services/githubfetcher.service"
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  providers:[GitSearchService],
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profile:Profile;
-  username:string;
+  user: any;
+  username: string;
+  repos: any[];
 
-  constructor(private GitSearchService:GitSearchService) {
-     }
-  findProfile(){
-  this.GitSearchService.updateProfile(this.username);
-  this.GitSearchService.profileRequest()
-  this.profile=this.GitSearchService.profile
+  constructor(private githubService: GithubfetcherService) {
+    this.user = false;
   }
-  ngOnInit() {}
+
+  searchUser() {
+    this.githubService.updateUser(this.username);
+
+    this.githubService.getUser()
+      .subscribe((user) => {this.user = user;});
+
+    this.githubService.getRepos()
+      .subscribe((repos) => {this.repos = repos;});
+  }
+
+  ngOnInit() {
+  }
 
 }
