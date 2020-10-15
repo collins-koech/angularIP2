@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GithubfetcherService } from "./services/githubfetcher.service";
 
 @Component({
   selector: 'app-root',
